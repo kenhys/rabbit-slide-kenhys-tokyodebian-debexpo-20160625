@@ -164,3 +164,102 @@ mentors.d.nの\n使いかた ITP編/RFS編
   # src = view-rfs-template.png
 
 * あとはメールするだけ(※)
+
+= 今日の話
+
+* debexpoとは？
+
+* ((*なぜdebexpoをハックする必要が？*))
+
+* どうやってハックしたのか？
+
+= mentors.d.nが\nオススメな理由
+
+= (再)mentors.d.nが\nオススメな理由
+
+* RFSテンプレート生成
+* あとはメールを出すだけ
+
+= (再)mentors.d.nが\nオススメな理由
+
+* RFSテンプレート生成
+* あとはメールを出すだけ
+* ((*と言ったが、あれは嘘だ*))
+
+= 論より証拠
+
+実際のRFS templateを\nお見せしよう
+
+= 証拠物件(1)
+
+  # image
+  # relative-height = 80
+  # src = rfs-template-pithole.png
+
+* [fill in]の文字がちらほら
+
+= 証拠物件(2)
+
+  # image
+  # relative-height = 70
+  # src = rfs-template-pithole2.png
+
+* 穴埋めが必要
+
+
+= 編集すべき箇所(1)
+
+  # image
+  # relative-width = 100
+  # src = rfs-template-fill-in1.png
+
+* Subject:に種別を書け
+
+= 編集すべき箇所(2)
+
+  # image
+  # relative-width = 100
+  # src = rfs-template-fill-in2.png
+
+* Severity:を書け
+
+= 編集すべき箇所(3)
+
+  # image
+  # relative-width = 100
+  # src = rfs-template-fill-in3.png
+
+* Upstream,URL,License:を書け
+
+= 編集すべき箇所(4)
+
+  # image
+  # relative-width = 100
+  # src = rfs-template-fill-in4.png
+
+* Changelogを書け
+
+= これで終わりだと思ったか？
+
+= 編集すべき箇所(5)
+
+  # image
+  # relative-width = 100
+  # src = rfs-template-fill-in5.png
+
+* さりげなく埋めこまれたhelloとexample.com
+
+= これでメールが出せる
+
+= と、思うでしょ？
+
+* 私も最初はそう思いました
+
+= 先頭に埋めこまれた\nスペース2つ
+
+  # image
+  # relative-width = 100
+  # src = rfs-template-pithole3.png
+
+* ((*もちろんエラーになります*))
+
