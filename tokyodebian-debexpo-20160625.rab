@@ -102,7 +102,19 @@
 * 2011年にメンテナンスモード入り
 * 後継はPyramidに
 
-= debexpoの役割\n(('note:Role of debexpo'))
+= debexpoの歴史(1)
+
+* 2003: 最初はPerlで書かれていた
+* その後、Pythonで書き直す試み
+
+= debexpoの歴史(2)
+
+* 2008:Google SoC 2008
+* 2009-2010: http://expo.debian.net/ として運用
+* 2011: そして http://mentors.debian.net/ へ
+
+
+= debexpoの役割
 
 * ITP,RFSのためのアップロード先
   * non-DDはパッケージを直接アップロードできない
