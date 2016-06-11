@@ -54,9 +54,119 @@
 
 そろそろ本題へ
 
+= 今日の話\n(('note:Today's topics'))
 
-= 二番目のスライド
+* debexpoとは？\n
+  (('note:What is debexpo?'))
+
+* なぜdebexpoをハックする必要が？\n
+  (('note:Why did you hack debexpo?'))
+
+* どうやってハックしたのか？\n
+  (('note:How did you do for it?'))
+
+= 今日の話\n(('note:Today's topics'))
+
+* ((*debexpoとは？\n
+  (('note:What is debexpo?'))*))
+
+* なぜdebexpoをハックする必要が？\n
+  (('note:Why did you hack debexpo?'))
+
+* どうやってハックしたのか？\n
+  (('note:How did you do for it?'))
+
+= debexpoとは?\n(('note:What is debexpo?'))
+
+* mentors.d.nを支えるウェブアプリケーション
+
+* リポジトリ名がdebexpo
+
+= mentors.d.nとは?\n(('note:What is mentors.d.n?'))
 
   # image
-  # src = https://raw.github.com/rabbit-shocker/rabbit/master/sample/lavie.png
-  # relative_height = 100
+  # relative-height = 80
+  # src = mentors.d.n.png
+
+* http://mentors.debian.net
+
+= debexpo概要\n(('note:abstraction of debexpo'))
+
+* Python製
+* Pylonsフレームワーク採用
+* テンプレートエンジンはMako
+
+= Pylons\n(('note:http://www.pylonsproject.org/'))
+
+* Railsっぽいフレームワーク
+* 2011年にメンテナンスモード入り
+* 後継はPyramidに
+
+= debexpoの役割\n(('note:Role of debexpo'))
+
+* ITP,RFSのためのアップロード先
+  * non-DDはパッケージを直接アップロードできない
+  * スポンサーが必要
+
+= mentors.d.nを\n経由しなくてもいいけど\n(('note:Without mentors.d.n...'))
+
+* 自前のサイトにアップロードするとか面倒
+* 公開の場でやりとりするほうがいいのでおすすめしない
+
+= ITP,RFSのおさらい
+
+mentors.d.nの\n使いかた ITP編/RFS編
+
+= mentors.d.nの\n使いかた ITP編(1)
+
+* パッケージをDebianにもっていきたい
+* ITPのメールをsubmit@bugs.d.oへ
+* パッケージをmentors.d.nにdput
+
+= mentors.d.nの\n使いかた ITP編(2)
+
+* RFSのメールをsubmit@bugs.d.oへ
+* レビュー & 修正 & dput
+* DDによるupload
+
+= mentors.d.nの\n使いかた RFS編(1)
+
+* upstreamの新リリース
+* 追従してパッケージをdput
+* RFSのメールをsubmit@bugs.d.oへ
+
+= mentors.d.nの\n使いかた RFS編(2)
+
+* レビュー & 修正 & dput
+* DDによるupload
+
+= mentors.d.nオススメ\n(('note:Good parts in mentors.d.n...'))
+
+* パッケージのチェックもしてくれる
+* RFSのテンプレートも生成してくれる
+
+= mentors.d.nオススメ\n(('note:Good parts in mentors.d.n...'))
+
+* ((*パッケージのチェックもしてくれる*))
+* RFSのテンプレートも生成してくれる
+
+= チェック結果がみれる\n(('note:View QA information'))
+
+  # image
+  # relative-height = 80
+  # src = qa-information.png
+
+* lintianの警告とか
+
+= mentors.d.nオススメ\n(('note:Good parts in mentors.d.n...'))
+
+* パッケージのチェックもしてくれる
+* ((*RFSのテンプレートも生成してくれる*))
+
+= RFSのテンプレート生成\n(('note:View RFS template'))
+
+  # image
+  # relative-height = 80
+  # src = view-rfs-template.png
+
+* あとはメールするだけ(※)
