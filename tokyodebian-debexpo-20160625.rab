@@ -134,17 +134,17 @@ mentors.d.nの\n使いかた ITP編/RFS編
 * レビュー & 修正 & dput
 * DDによるupload
 
-= mentors.d.nオススメ\n(('note:Good parts in mentors.d.n...'))
+= mentors.d.nオススメ
 
 * パッケージのチェックもしてくれる
 * RFSのテンプレートも生成してくれる
 
-= mentors.d.nオススメ\n(('note:Good parts in mentors.d.n...'))
+= mentors.d.nオススメ
 
 * ((*パッケージのチェックもしてくれる*))
 * RFSのテンプレートも生成してくれる
 
-= チェック結果がみれる\n(('note:View QA information'))
+= チェック結果がみれる
 
   # image
   # relative-height = 80
@@ -152,12 +152,12 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
 * lintianの警告とか
 
-= mentors.d.nオススメ\n(('note:Good parts in mentors.d.n...'))
+= mentors.d.nオススメ
 
 * パッケージのチェックもしてくれる
 * ((*RFSのテンプレートも生成してくれる*))
 
-= RFSのテンプレート生成\n(('note:View RFS template'))
+= RFSのテンプレート生成
 
   # image
   # relative-height = 80
