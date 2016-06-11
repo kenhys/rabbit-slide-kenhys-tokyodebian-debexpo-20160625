@@ -15,7 +15,7 @@
 : theme
   .
 
-= 自己紹介(1)\n(('note:Profile'))
+= 自己紹介(1)
 
   # image
   # relative-height = 40
@@ -24,7 +24,7 @@
 * Twitter/GitHub: @kenhys
 * 所属: ((*トラックポイント・ソフトドーム派*))
 
-= 自己紹介(2)\n(('note:Profile'))
+= 自己紹介(2)
 
   # image
   # relative-height = 60
@@ -32,7 +32,7 @@
 
 * トラックポイント・ソフトドーム派
 
-= 参考画像の出典:\n(('note:the image by...'))
+= 参考画像の出典
 
   # image
   # relative-height = 80
@@ -50,39 +50,33 @@
 
 (('tag:x-small'))(('note:http://shopap.lenovo.com/jp/notebooks/thinkpad/x-series/x240/より'))
 
-= 閑話休題\n(('note:Back on topic'))
+= 閑話休題
 
 そろそろ本題へ
 
-= 今日の話\n(('note:Today's topics'))
+= 今日の話
 
 * debexpoとは？\n
-  (('note:What is debexpo?'))
 
 * なぜdebexpoをハックする必要が？\n
-  (('note:Why did you hack debexpo?'))
 
 * どうやってハックしたのか？\n
-  (('note:How did you do for it?'))
 
-= 今日の話\n(('note:Today's topics'))
+= 今日の話
 
 * ((*debexpoとは？\n
-  (('note:What is debexpo?'))*))
 
 * なぜdebexpoをハックする必要が？\n
-  (('note:Why did you hack debexpo?'))
 
 * どうやってハックしたのか？\n
-  (('note:How did you do for it?'))
 
-= debexpoとは?\n(('note:What is debexpo?'))
+= debexpoとは?
 
 * mentors.d.nを支えるウェブアプリケーション
 
 * リポジトリ名がdebexpo
 
-= mentors.d.nとは?\n(('note:What is mentors.d.n?'))
+= mentors.d.nとは?
 
   # image
   # relative-height = 80
@@ -90,7 +84,7 @@
 
 * http://mentors.debian.net
 
-= debexpo概要\n(('note:abstraction of debexpo'))
+= debexpo概要
 
 * Python製
 * Pylonsフレームワーク採用
