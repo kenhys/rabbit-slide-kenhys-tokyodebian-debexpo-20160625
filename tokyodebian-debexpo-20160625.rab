@@ -84,6 +84,12 @@
 
 * http://mentors.debian.net
 
+= debexpoの由来
+
+  # blockquote
+  # title = https://workaround.org/project/debexpo
+  The new project was called "debexpo" because it was supposed to become an ((*expo*))sition for ((*Deb*))ian packages.
+
 = debexpo概要
 
 * Python製
