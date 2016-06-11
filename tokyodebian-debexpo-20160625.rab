@@ -15,11 +15,45 @@
 : theme
   .
 
-= 最初のスライド
+= 自己紹介(1)\n(('note:Profile'))
 
-  * 項目1
-  * 項目2
-  * 項目3
+  # image
+  # relative-height = 40
+  # src = https://pbs.twimg.com/profile_images/2290018079/cvcy12slbeva80jboxzf_400x400.png
+
+* Twitter/GitHub: @kenhys
+* 所属: ((*トラックポイント・ソフトドーム派*))
+
+= 自己紹介(2)\n(('note:Profile'))
+
+  # image
+  # relative-height = 60
+  # src = track-points.png
+
+* トラックポイント・ソフトドーム派
+
+= 参考画像の出典:\n(('note:the image by...'))
+
+  # image
+  # relative-height = 80
+  # src = irasutoya.png
+
+* http://www.irasutoya.com/
+
+= 5ボタントラックパッド
+
+  # image
+  # relative-height = 50
+  # src = lenovo-laptop-thinkpad-x240-keyboard-zoom-3.jpg
+
+* 正直、これはヒドイ
+
+(('tag:x-small'))(('note:http://shopap.lenovo.com/jp/notebooks/thinkpad/x-series/x240/より'))
+
+= 閑話休題\n(('note:Back on topic'))
+
+そろそろ本題へ
+
 
 = 二番目のスライド
 
