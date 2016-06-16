@@ -264,5 +264,166 @@ mentors.d.nの\n使いかた ITP編/RFS編
   # relative-width = 100
   # src = rfs-template-pithole3.png
 
+* コマンドメールであることを思いだそう
 * (('wait'))((*もちろんエラーになります*))
+
+= Q. なぜdebexpoを\nハックするのか？
+
+* A. RFSテンプレートの\n残念っぷりをどうにかしたい
+
+= 今日の話
+
+* debexpoとは？
+
+* なぜdebexpoをハックする必要が？
+
+* ((*どうやってハックしたのか？*))
+
+= あらすじ
+
+* upstream探し
+* ドキュメント探し
+* まずは動かしてみる
+* あたりをつけて修正
+* そしてPRへ
+
+= あらすじ
+
+* ((*upstream探し*))
+* ドキュメント探し
+* まずは動かしてみる
+* あたりをつけて修正
+* そしてPRへ
+
+= upstream探し(1)
+
+  # image
+  # relative-width = 100
+  # src = source-code-and-bugs.png
+
+* 下部にリンクがきちんとある
+* aliothをみればいいとわかる
+
+= upstream探し(2)
+
+  # image
+  # relative-height = 80
+  # src = last-change-on-alioth.png
+
+* 最近はコミットがない
+
+= ちょっと不安に
+
+* よく使われているならそこそこメンテされているイメージ
+* 実際にはそうでもなかった
+
+= upstream探し(3)\n
+
+  # image
+  # relative-height = 70
+  # src = last-change-on-github.png
+
+* GitHubのほうが実は新しい
+  * (('tag:x-small'))https://github.com/debexpo/debexpo
+
+
+= upstream探し(4)
+
+* aliothがmaster
+* GitHubのをマージという運用
+
+= あらすじ
+
+* upstream探し
+* ((*ドキュメント探し*))
+* まずは動かしてみる
+* あたりをつけて修正
+* そしてPRへ
+
+= ドキュメント探し
+
+* docs/*にドキュメントが整備
+
+= あらすじ
+
+* upstream探し
+* ドキュメント探し
+* ((*まずは動かしてみる*))
+* あたりをつけて修正
+* そしてPRへ
+
+= まずは動かしてみる
+
+* 既存システムにセットアップ
+* virtualenvで分離セットアップ
+* Virtualboxでセットアップ
+
+= まずはVirtualboxで
+
+* 環境を分けたいのでVirtualboxを選択
+
+= Vagrantfileが
+
+  # Every Vagrant virtual environment requires a box to build off of.
+  config.vm.box = "chef/debian-7.6"
+
+* Debian 7.6 (2014年7月12日)？
+* Debian 7.10でてるよ？
+
+= 不安に思いつつも
+
+* vagrant upでVMがたちあがる
+* プロビジョニング済み
+
+= .dput.cfの設定をする
+
+    [debexpo]
+    fqdn = localhost:5000
+    incoming = /upload/kenhys@gmail.com/password
+    method = http
+    allow_unsigned_uploads = 0
+
+= ユーザーの追加
+
+* JSONを用意する
+
+    {
+      "realname":"Hayashi Kentaro",
+      "password":"password",
+      "email":"hayashi@clear-code.com"
+    }
+
+
+= verificationの設定(裏道)
+
+  # image
+  # relative-width = 90
+  # src = update-verification.png
+
+* verificationを空にする
+
+= dmupの設定(裏道)
+
+  # image
+  # relative-width = 90
+  # src = update-dmup.png
+
+* dmupに同意したことにする
+
+= 試しにパッケージをアップロード
+
+
+    Uploading to debexpo (via http to localhost:5000):
+    Uploading groonga_6.0.2-1.dsc: Upload failed: 500 Internal Server Error
+
+* ((*500 Internal Server Error*))
+
+= さっそくバグを踏む
+
+  # image
+  # relative-width = 90
+  # src = find-a-debexpo-bug.png
+
+* あるべきディレクトリがないというオチ
+
 
