@@ -94,14 +94,17 @@
 
 = debexpoの歴史(1)
 
-* 2003: 最初はPerlで書かれていた
-* その後、Pythonで書き直す試み
+* 2003年
+  * 最初はPerlで書かれていた
+* その後、Pythonで書き直し
 
 = debexpoの歴史(2)
 
-* 2008:Google SoC 2008
-* 2009-2010: http://expo.debian.net/ として運用
-* 2011: そして http://mentors.debian.net/ へ
+* 2008年
+  * Google SoCで開発が進む
+* 2009-2010年
+  * http://expo.debian.net/ 運用開始
+* 2011年 そしてmentors.d.nへ
 
 
 = debexpoの役割
