@@ -346,6 +346,7 @@ mentors.d.nの\n使いかた ITP編/RFS編
 = ドキュメント探し
 
 * docs/*にドキュメントが整備
+  * docs/installing.rstを参照
 
 = あらすじ
 
@@ -390,6 +391,17 @@ mentors.d.nの\n使いかた ITP編/RFS編
     Error: The requested URL returned error: 404 Not Found
 
 * boxが見つからなくてコケる
+
+= Vagrantfileを修正
+
+* vagrant up --provision
+* vagrant ssh
+
+= vagrant sshして\nサーバーを起動
+
+    cd debexpo
+    . venv/bin/activate
+    paster serve development.ini
 
 = .dput.cfの設定をする
 
