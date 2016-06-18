@@ -454,6 +454,7 @@ mentors.d.nの\n使いかた ITP編/RFS編
   # src = images/update-verification.png
 
 * verificationを空にする
+  * メールの確認をバイパス
 
 = dmupの設定
 
@@ -461,7 +462,8 @@ mentors.d.nの\n使いかた ITP編/RFS編
   # relative-width = 90
   # src = images/update-dmup.png
 
-* dmupに同意したことにする
+* dmupフィールドを更新
+  * 同意したことにする
 
 = .dput.cfの設定をする
 
@@ -470,6 +472,8 @@ mentors.d.nの\n使いかた ITP編/RFS編
     incoming = /upload/kenhys@gmail.com/password
     method = http
     allow_unsigned_uploads = 0
+
+* アップロードの準備をする
 
 = 試しにパッケージをアップロード
 
