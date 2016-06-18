@@ -365,7 +365,7 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
 * 環境を分けたいのでVirtualboxを選択
 
-= Vagrantfileが
+= Vagrantfileがアレ
 
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "chef/debian-7.6"
@@ -373,10 +373,23 @@ mentors.d.nの\n使いかた ITP編/RFS編
 * Debian 7.6 (2014年7月12日)？
 * Debian 7.10でてるよ？
 
-= 不安に思いつつも
+= vagrant upしてみると
 
-* vagrant upでVMがたちあがる
-* プロビジョニング済み
+    [56714]% vagrant up
+    Bringing machine 'default' up with 'virtualbox' provider...
+    ==> default: Box 'chef/debian-7.6' could not be found. Attempting to find and install...
+      default: Box Provider: virtualbox
+      default: Box Version: >= 0
+    The box 'chef/debian-7.6' could not be found or
+    could not be accessed in the remote catalog. If this is a private
+    box on HashiCorp's Atlas, please verify you're logged in via
+    `vagrant login`. Also, please double-check the name. The expanded
+    URL and error message are shown below:
+  
+    URL: ["https://atlas.hashicorp.com/chef/debian-7.6"]
+    Error: The requested URL returned error: 404 Not Found
+
+* boxが見つからなくてコケる
 
 = .dput.cfの設定をする
 
