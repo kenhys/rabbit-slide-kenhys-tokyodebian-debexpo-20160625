@@ -491,4 +491,31 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
 * あるべきディレクトリがないというオチ
 
+= 成果物をPR#35で出した
 
+  # image
+  # relative-width = 60
+  # src = images/debexpo-pr35.png
+
+(('tag:x-small'))https://github.com/debexpo/debexpo/pull/35
+
+= PR#35の経過(1)
+
+
+* May 4
+  * @olasdさんから好意的な反応
+* May 14
+  * どうなった？とつついてみるも反応なし
+
+= PR#35の経過(2)
+
+* May 21
+  * Debian勉強会でまだマージされてない話をする
+  * あれやこれやでしばし放置
+
+= PR#35の経過(3)
+
+* June 19
+  * @paulproteusさんをつついてみる
+* June 19
+  * 20日にみとくわ、と@paulproteusさんから反応あり
