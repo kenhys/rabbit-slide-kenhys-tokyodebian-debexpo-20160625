@@ -28,7 +28,7 @@
 
   # image
   # relative-height = 60
-  # src = track-points.png
+  # src = images/track-points.png
 
 * トラックポイント・ソフトドーム派
 
@@ -36,7 +36,7 @@
 
   # image
   # relative-height = 80
-  # src = irasutoya.png
+  # src = images/irasutoya.png
 
 * http://www.irasutoya.com/
 
@@ -70,7 +70,7 @@
 
   # image
   # relative-height = 80
-  # src = mentors.d.n.png
+  # src = images/mentors.d.n.png
 
 * http://mentors.debian.net
 
@@ -156,7 +156,7 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
   # image
   # relative-height = 80
-  # src = qa-information.png
+  # src = images/qa-information.png
 
 * lintianの警告とか
 
@@ -169,7 +169,7 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
   # image
   # relative-height = 80
-  # src = view-rfs-template.png
+  # src = images/view-rfs-template.png
 
 * あとはメールするだけ(※)
 
@@ -197,7 +197,7 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
   # image
   # relative-height = 80
-  # src = rfs-template-pithole.png
+  # src = images/rfs-template-pithole.png
 
 * [fill in]の文字がちらほら
 
@@ -205,7 +205,7 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
   # image
   # relative-height = 70
-  # src = rfs-template-pithole2.png
+  # src = images/rfs-template-pithole2.png
 
 * 穴埋めが必要
 
@@ -214,7 +214,7 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
   # image
   # relative-width = 100
-  # src = rfs-template-fill-in1.png
+  # src = images/rfs-template-fill-in1.png
 
 * Subject:に種別を書け
 
@@ -222,7 +222,7 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
   # image
   # relative-width = 100
-  # src = rfs-template-fill-in2.png
+  # src = images/rfs-template-fill-in2.png
 
 * Severity:を書け
 
@@ -230,7 +230,7 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
   # image
   # relative-width = 100
-  # src = rfs-template-fill-in3.png
+  # src = images/rfs-template-fill-in3.png
 
 * Upstream,URL,License:を書け
 
@@ -238,7 +238,7 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
   # image
   # relative-width = 100
-  # src = rfs-template-fill-in4.png
+  # src = images/rfs-template-fill-in4.png
 
 * Changelogを書け
 
@@ -248,7 +248,7 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
   # image
   # relative-width = 100
-  # src = rfs-template-fill-in5.png
+  # src = images/rfs-template-fill-in5.png
 
 * さりげなく埋めこまれたhelloとexample.com
 
@@ -262,7 +262,7 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
   # image
   # relative-width = 100
-  # src = rfs-template-pithole3.png
+  # src = images/rfs-template-pithole3.png
 
 * コマンドメールであることを思いだそう
 * (('wait'))((*もちろんエラーになります*))
@@ -299,7 +299,7 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
   # image
   # relative-width = 100
-  # src = source-code-and-bugs.png
+  # src = images/source-code-and-bugs.png
 
 * 下部にリンクがきちんとある
 * aliothをみればいいとわかる
@@ -308,7 +308,7 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
   # image
   # relative-height = 80
-  # src = last-change-on-alioth.png
+  # src = images/last-change-on-alioth.png
 
 * 最近はコミットがない
 
@@ -321,7 +321,7 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
   # image
   # relative-height = 70
-  # src = last-change-on-github.png
+  # src = images/last-change-on-github.png
 
 * GitHubのほうが実は新しい
   * (('tag:x-small'))https://github.com/debexpo/debexpo
@@ -398,7 +398,7 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
   # image
   # relative-width = 90
-  # src = update-verification.png
+  # src = images/update-verification.png
 
 * verificationを空にする
 
@@ -406,7 +406,7 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
   # image
   # relative-width = 90
-  # src = update-dmup.png
+  # src = images/update-dmup.png
 
 * dmupに同意したことにする
 
@@ -422,7 +422,7 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
   # image
   # relative-width = 90
-  # src = find-a-debexpo-bug.png
+  # src = images/find-a-debexpo-bug.png
 
 * あるべきディレクトリがないというオチ
 
