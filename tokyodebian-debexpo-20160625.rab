@@ -405,17 +405,30 @@ mentors.d.nの\n使いかた ITP編/RFS編
     . venv/bin/activate
     paster serve development.ini
 
-= .dput.cfの設定をする
+= 5000ポートでサーバー起動
 
-    [debexpo]
-    fqdn = localhost:5000
-    incoming = /upload/kenhys@gmail.com/password
-    method = http
-    allow_unsigned_uploads = 0
+  # image
+  # relative-height = 80
+  # src = images/debexpo-on-localhost.png
 
-= ユーザーの追加
+* ブラウザでアクセス可能に
 
-* JSONを用意する
+= ユーザーの追加(1)
+
+* ブラウザ経由で追加
+* JSONで追加
+
+= ユーザーの追加(2)
+
+  # image
+  # relative-height = 80
+  # src = images/debexpo-sign-me-up.png
+
+* ブラウザ経由で追加
+
+= ユーザーの追加(3)
+
+* JSONで追加するなら
 
     {
       "realname":"Hayashi Kentaro",
@@ -423,8 +436,18 @@ mentors.d.nの\n使いかた ITP編/RFS編
       "email":"hayashi@clear-code.com"
     }
 
+= ユーザーの追加(4)
 
-= verificationの設定(裏道)
+* 追加用のスクリプトを利用
+
+    python ./bin/user_importer.py -i development.ini -u user.json
+
+= アカウントの有効化
+
+* verification (ログインに必要)
+* dmup (アップロードに必要)
+
+= verificationの設定
 
   # image
   # relative-width = 90
@@ -432,13 +455,21 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
 * verificationを空にする
 
-= dmupの設定(裏道)
+= dmupの設定
 
   # image
   # relative-width = 90
   # src = images/update-dmup.png
 
 * dmupに同意したことにする
+
+= .dput.cfの設定をする
+
+    [debexpo]
+    fqdn = localhost:5000
+    incoming = /upload/kenhys@gmail.com/password
+    method = http
+    allow_unsigned_uploads = 0
 
 = 試しにパッケージをアップロード
 
