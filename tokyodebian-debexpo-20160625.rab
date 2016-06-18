@@ -358,9 +358,11 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
 = まずは動かしてみる
 
-* 既存システムにセットアップ
-* virtualenvで分離セットアップ
-* Virtualboxでセットアップ
+* セットアップ方法は3種
+
+  * 既存システムにインストール
+  * virtualenvでインストール
+  * Virtualboxでインストール
 
 = まずはVirtualboxで
 
