@@ -526,3 +526,18 @@ mentors.d.nの\n使いかた ITP編/RFS編
   * @paulproteusさんをつついてみる
 * June 19
   * 20日にみとくわ、と@paulproteusさんから反応あり
+
+= PR#35の経過(4)
+
+  # image
+  # relative-width = 100
+  # src = images/debexpo-pr35-paulproteus.png
+
+* どうもDebConf16待ち
+
+= まとめ
+
+* debexpoとはmentors.d.nのこと
+* RFSテンプレートが残念だったのでカッとなってやった
+* プラグインで広がる可能性
+
