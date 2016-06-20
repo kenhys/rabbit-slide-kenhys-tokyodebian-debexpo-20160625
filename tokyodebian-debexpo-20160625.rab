@@ -446,7 +446,8 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
 * 追加用のスクリプトを利用
 
-    python ./bin/user_importer.py -i development.ini -u user.json
+    python ./bin/user_importer.py \
+    -i development.ini -u user.json
 
 = アカウントの有効化
 
