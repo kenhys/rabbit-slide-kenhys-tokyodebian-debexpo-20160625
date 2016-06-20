@@ -573,6 +573,92 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
 * オプションを正しく解釈するように
 
+= パッケージリスト
+
+  # image
+  # relative-width = 100
+  # src = images/debexpo-package-list.png
+
+* リストアップされるように
+
+= あらすじ
+
+* upstream探し
+* ドキュメント探し
+* まずは動かしてみる
+* ((*あたりをつけて修正*))
+* そしてPRへ
+
+= ディレクトリ構成
+
+    config
+    controllers
+    cronjobs
+    importer
+    i18n
+    lib
+    model
+    plugins
+    public
+    templates
+    tests
+
+= 手がかりはURL
+
+  # image
+  # relative-height = 80
+  # relative-width = 80
+  # src = images/debexpo-investigate-rfs-template-link.png
+
+* 知りたいのはこのリンク
+
+= こんなリンク先
+
+* http://localhost:5000/sponsors/rfs-howto/xxxx
+
+= コントローラを探す
+
+    def rfs_howto(self, packagename = None):
+
+
+        c.package = None
+        c.package_dir = None
+        if packagename:
+            package = meta.session.query(Package)
+                        .filter_by(name=packagename).first()
+            if package:
+                c.package = package
+                c.package_dir = get_package_dir(package.name)
+
+        return render('/sponsor/rfs_howto.mako')
+
+* controllers/sponsor.py
+
+= テンプレートを見る
+
+    Package: sponsorship-requests
+    Severity: normal [important for RC bugs, wishlist for new packages]
+
+    Dear mentors,
+
+    %if c.package:
+      I am looking for a sponsor for my package "${ c.package.name }"
+    %else:
+      I am looking for a sponsor for my package "hello":
+    %endif
+    
+* templates/sponsor/rfs_howto.mako
+
+= やりたいこと
+
+* [fill in]撲滅
+* mailto:リンクの生成
+
+= 当初の目論見
+
+* ${ c.package.name }とかあるぞ
+* テンプレートを書き換えればいいのでは？
+
 = 成果物をPR#35で出した
 
   # image
