@@ -550,7 +550,7 @@ mentors.d.nの\n使いかた ITP編/RFS編
     -c /tmp/debexpo/growl-for-linux_0.8.5-1_source.changes \
     -i development.ini --skip-gpg-check --skip-email
 
-* アップロードしただけではだめ
+* インポートスクリプト実行
 
 = とりこみできずに\nTraceback
 
