@@ -351,6 +351,7 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
 * docs/*にドキュメントが整備
   * docs/installing.rstを参照
+  * リンク先が404なこともあるので注意
 
 = あらすじ
 
@@ -398,10 +399,18 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
 * boxが見つからなくてコケる
 
-= Vagrantfileを修正
+= PR#32で修正
 
-* vagrant up --provision
-* vagrant ssh
+  # image
+  # relative-width = 100
+  # src = images/debexpo-pr32-use-latest-wheezy.png
+
+* Bento projectに移行してるよ
+
+= 起動してログインするまで
+
+    vagrant up --provision
+    vagrant ssh
 
 = vagrant sshして\nサーバーを起動
 
@@ -498,6 +507,72 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
 * あるべきディレクトリがないというオチ
 
+= PR#34で修正
+
+  # image
+  # relative-width = 100
+  # src = images/debexpo-pr34-incoming-directory.png
+
+* ちゃんとディレクトリを作る
+
+= PR出して気づいた怖い話
+
+  # image
+  # relative-width = 100
+  # src = images/broken-ci-since-8month-ago.png
+
+* 最後にテストが通ったの((*8ヶ月前*))
+
+= なぜか？
+
+* Travis-CIの環境の変化
+* しばらくコミットされてないので誰も気づかない
+
+= PR#38で修正
+
+  # image
+  # relative-width = 100
+  # src = images/debexpo-pr38-broken-ci.png
+
+* テストが通るように
+
+= PR#37で修正
+
+  # image
+  # relative-width = 100
+  # src = images/debexpo-pr37-drop-py26.png
+
+* Python2.6でCIはもういいんじゃ
+
+= パッケージのとりこみ
+
+    ./bin/debexpo_importer.py \
+    -c /tmp/debexpo/growl-for-linux_0.8.5-1_source.changes \
+    -i development.ini --skip-gpg-check --skip-email
+
+* アップロードしただけではだめ
+
+= とりこみできずに\nTraceback
+
+    Traceback (most recent call last):
+    File "./bin/debexpo_importer.py", line 60, in
+    i.main()
+    File "/home/vagrant/debexpo/debexpo/importer/importer.py", line 473, in main
+    gpg = get_gnupg()
+    File "/home/vagrant/debexpo/debexpo/lib/utils.py", line 119, in get_gnupg
+    return gnupg.GnuPG(config['debexpo.gpg_path'],
+    File "/home/vagrant/debexpo/venv/local/lib/python2.7/site-packages/paste/registry.py", line 146, in getitem
+    return self._current_obj()[key]
+    KeyError: 'debexpo.gpg_path'
+
+= PR#39で修正
+
+  # image
+  # relative-width = 100
+  # src = images/debexpo-pr39-skip-gpg.png
+
+* オプションを正しく解釈するように
+
 = 成果物をPR#35で出した
 
   # image
@@ -539,5 +614,5 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
 * debexpoとはmentors.d.nのこと
 * RFSテンプレートが残念だったのでカッとなってやった
-* プラグインで広がる可能性
+* プラグインでいろいろできそう
 
