@@ -492,11 +492,11 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
 * アップロードの準備をする
 
-= 試しにパッケージをアップロード
-
+= 試しにパッケージを\nアップロード
 
     Uploading to debexpo (via http to localhost:5000):
-    Uploading groonga_6.0.2-1.dsc: Upload failed: 500 Internal Server Error
+    Uploading groonga_6.0.2-1.dsc:
+    Upload failed: 500 Internal Server Error
 
 * ((*500 Internal Server Error*))
 
