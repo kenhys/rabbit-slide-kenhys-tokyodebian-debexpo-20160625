@@ -661,6 +661,32 @@ mentors.d.nの\n使いかた ITP編/RFS編
 * ${ c.package.name }とかあるぞ
 * テンプレートを書き換えればいいのでは？
 
+= 無理でした
+
+= なぜか？
+
+* 必要なメタ情報を保持していない
+
+= debexpoの処理の流れ(1)
+
+* dputでmentors.d.nへアップロード
+* インポート前処理
+* パッケージのインポート処理
+
+= debexpoの処理の流れ(2)
+
+* dputしたファイルは/tmp/debexpo/pubへ保存
+* /tmp/debexpoヘ移動
+  * orig.tar.gzがなかったりするとrejectメール
+
+= debexpoの処理の流れ(3)
+
+* インポート処理で/tmp/debexpo/filesへ
+* /tmp/debexpo/files以下
+  * pool
+  * dist
+  * git
+
 = debexpoの主要テーブル
 
 * packages
