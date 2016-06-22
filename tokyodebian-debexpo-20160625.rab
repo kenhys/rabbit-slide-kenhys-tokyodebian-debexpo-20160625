@@ -813,6 +813,25 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
 * debexpo/plugins/foo.py
 
+= プラグインいろいろ
+
+  % wc -l debexpo/plugins/*.py
+   99 debexpo/plugins/buildsystem.py
+   67 debexpo/plugins/changeslist.py
+  141 debexpo/plugins/closedbugs.py
+   85 debexpo/plugins/controlfields.py
+  185 debexpo/plugins/debianqa.py
+   85 debexpo/plugins/diffclean.py
+   63 debexpo/plugins/distribution.py
+  123 debexpo/plugins/getorigtarball.py
+  116 debexpo/plugins/lintian.py
+  100 debexpo/plugins/maintaineremail.py
+   69 debexpo/plugins/native.py
+   77 debexpo/plugins/notuploader.py
+   86 debexpo/plugins/removepackage.py
+   60 debexpo/plugins/ubuntuversion.py
+  110 debexpo/plugins/watchfile.py
+
 = プラグインの適用方法
 
 * 設定ファイル(.ini)で制御
