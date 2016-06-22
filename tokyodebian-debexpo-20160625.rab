@@ -785,6 +785,66 @@ mentors.d.nの\n使いかた ITP編/RFS編
     "is-debian-maintainer": true
   }|1
 
+= やりたいこと
+
+* [fill in]撲滅
+* mailto:リンクの生成
+
+= 修正方針
+
+* プラグインで追加のメタ情報を収集
+* メール用のテンプレート追加
+* 詳細ページでメタ情報を表示しつつmailto:リンク生成
+
+= プラグインの作り方
+
+* docs/writing_plugins.rst
+
+= プラグインの雛形
+
+  # enscript python
+  class FooPlugin(BasePlugin):
+
+    def test_xxx(self):
+      self.passed(outcome, data, severity)
+      or
+      self.failed(outcome, data, severity)
+  plugin = FooPlugin
+
+* debexpo/plugins/foo.py
+
+= プラグインの適用方法
+
+* 設定ファイル(.ini)で制御
+  * インポート前処理
+  * QA処理
+  * Debian入りした時
+  * インポート処理後
+
+= プラグインを設定(1)
+
+* debexpo.plugins.post_upload
+  * インポート前処理で適用
+  * getorigtarballプラグイン
+  
+= プラグインを設定(2)
+
+* debexpo.plugins.qa
+  * QA処理で適用
+  * lintianプラグイン
+
+= プラグインを設定(3)
+
+* debexpo.plugins.post_upload_to_debian
+  * パッケージがDebian入りしたときに適用
+  * removepackageプラグイン
+  
+= プラグインを設定(4)
+
+* debexpo.plugins.post_successful_upload
+  * インポート処理後に適用
+  * changeslistプラグイン
+
 = 成果物をPR#35で出した
 
   # image
