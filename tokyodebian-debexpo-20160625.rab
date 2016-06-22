@@ -864,6 +864,59 @@ mentors.d.nの\n使いかた ITP編/RFS編
   * インポート処理後に適用
   * changeslistプラグイン
 
+= プラグインの書きかた
+
+なんとなくわかったので\nいざ実践へ
+
+= やったこと
+
+* プラグインの処理を実装
+* プラグインを適用
+* mailto用テンプレート追加
+* rfstemplateのデータを表示
+
+= プラグインの処理を実装
+
+* debexpo/plugins/rfstemplate.pyを実装
+  * 実質100行ないくらい
+  * debian/changelogやdebian/controlから抽出
+
+= プラグインを適用
+
+  debexpo.plugins.qa = ... rfstemplate ...
+
+* development.iniに設定
+
+= mailto用テンプレート追加
+
+  %if c.rfstemplate:
+    Upstream Author : ${ c.rfstemplate['upstream-author'] }
+  * URL             : ${ c.rfstemplate['upstream-url'] }
+  * License         : ${ c.rfstemplate['upstream-license'] }
+  %else:
+    Upstream Author : [fill in name and email of upstream]
+  * URL             : [fill in URL of upstreams web site]
+  * License         : [fill in]
+  %endif
+
+* debexpo/templates/sponsor/rfs_template.mako
+
+= rfstemplateの\nデータを表示
+
+  # enscript python
+  if latest:
+    rfstemplate = meta.session.query(PackageInfo)
+                    .filter_by(package_version_id=latest.id)
+                    .filter_by(from_plugin='rfstemplate').first()
+    if rfstemplate:
+      c.rfstemplate = json.loads(rfstemplate.data)
+    c.mailbody = render('/sponsor/rfs_template.mako')
+  return render('/sponsor/rfs_howto.mako')
+
+* debexpo/controllers/sponsor.py
+
+= 実際にデモ
+
 = 成果物をPR#35で出した
 
   # image
