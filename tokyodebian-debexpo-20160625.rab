@@ -409,14 +409,14 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
 = 起動してログインするまで
 
-    vagrant up --provision
-    vagrant ssh
+    $ vagrant up --provision
+    $ vagrant ssh
 
 = vagrant sshして\nサーバーを起動
 
-    cd debexpo
-    . venv/bin/activate
-    paster serve development.ini
+    $ cd debexpo
+    $ . venv/bin/activate
+    $ paster serve development.ini
 
 = 5000ポートでサーバー起動
 
@@ -455,7 +455,7 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
 * 追加用のスクリプトを利用
 
-    python ./bin/user_importer.py \
+    $ python ./bin/user_importer.py \
     -i development.ini -u user.json
 
 = アカウントの有効化
@@ -546,7 +546,7 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
 = パッケージのとりこみ
 
-    ./bin/debexpo_importer.py \
+    $ ./bin/debexpo_importer.py \
     -c /tmp/debexpo/growl-for-linux_0.8.5-1_source.changes \
     -i development.ini --skip-gpg-check --skip-email
 
