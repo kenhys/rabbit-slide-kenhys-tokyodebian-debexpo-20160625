@@ -661,6 +661,104 @@ mentors.d.nの\n使いかた ITP編/RFS編
 * ${ c.package.name }とかあるぞ
 * テンプレートを書き換えればいいのでは？
 
+= debexpoの主要テーブル
+
+* packages
+* package_versions
+* package_info
+
+= packagesテーブル
+
+* パッケージのマスター
+* 名前と説明くらいしか管理してない
+
+= packagesテーブル
+
+    # enscript sql
+    sqlite> .schema packages
+    CREATE TABLE packages (
+        id INTEGER NOT NULL, 
+        name TEXT NOT NULL, 
+        user_id INTEGER, 
+        description TEXT, 
+        watch_counter INTEGER, 
+        download_counter INTEGER, 
+        needs_sponsor INTEGER NOT NULL, 
+        PRIMARY KEY (id), 
+        FOREIGN KEY(user_id) REFERENCES users (id)
+    );
+
+= package_versions\nテーブル
+
+* パッケージの版管理
+* 何度もアップロードすると増加
+
+= package_versions\nテーブル
+
+    # enscript sql
+    sqlite> .schema package_versions
+    CREATE TABLE package_versions (
+        id INTEGER NOT NULL, 
+        package_id INTEGER, 
+        version TEXT NOT NULL, 
+        maintainer TEXT NOT NULL, 
+        section TEXT NOT NULL, 
+        distribution TEXT NOT NULL, 
+        qa_status INTEGER NOT NULL, 
+        component TEXT NOT NULL, 
+        priority TEXT, 
+        closes TEXT, 
+        uploaded DATETIME NOT NULL, 
+        PRIMARY KEY (id), 
+        FOREIGN KEY(package_id) REFERENCES packages (id)
+    );
+
+= package_infoテーブル
+
+* プラグインの適用結果を管理
+* メタ情報を保持
+
+= package_infoテーブル
+
+  # enscript sql
+  sqlite> .schema package_info
+  CREATE TABLE package_info (
+        id INTEGER NOT NULL, 
+        package_version_id INTEGER, 
+        from_plugin VARCHAR(200) NOT NULL, 
+        outcome VARCHAR(200) NOT NULL, 
+        data TEXT, 
+        severity INTEGER NOT NULL, 
+        PRIMARY KEY (id), 
+        FOREIGN KEY(package_version_id) REFERENCES package_versions (id)
+  );
+
+= package_infoテーブル
+
+  * from_plugin
+    * どのプラグインか
+  * outcome
+    * 説明文(エラーメッセージ)
+  * data
+    * JSONデータ
+
+= package_infoの例
+
+  # enscript sql
+  sqlite> select * from package_info;
+  1|1|native|Package is not native|{"native": false}|1
+  2|1|maintaineremail|"Maintainer" email is the same as the uploader|{
+    "user-email":   "hayashi@clear-code.com",
+    "uploader-emails": [],
+    "maintainer-email": "hayashi@clear-code.com",
+    "user-is-maintainer": true
+  }|1
+  3|1|debianqa|Package is already in Debian|{
+    "nmu": false,
+    "in-debian": true,
+    "is-debian-maintainer": true
+  }|1
+
 = 成果物をPR#35で出した
 
   # image
