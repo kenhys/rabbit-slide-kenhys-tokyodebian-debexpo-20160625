@@ -267,7 +267,15 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
 = Q. なぜdebexpoを\nハックするのか？
 
-* A. RFSテンプレートの\n残念っぷりをどうにかしたい
+* A. RFSテンプレートの残念っぷりをどうにかしたい
+
+= 同じ思いの人はいた
+
+  # image
+  # relative-width = 100
+  # src = images/alioth-debexpo-313593-request.png
+
+* Aliothのtrackerで4年も前に通った道
 
 = 今日の話
 
