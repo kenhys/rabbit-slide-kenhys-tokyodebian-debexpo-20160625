@@ -80,6 +80,14 @@
   # title = https://workaround.org/project/debexpo
   The new project was called "debexpo" because it was supposed to become an ((*expo*))sition for ((*Deb*))ian packages.
 
+= ゆるキャラも
+
+  # image
+  # relative-height = 80
+  # src = images/debexpo-mascot-zoom.png
+
+* 名前は不明。知っていたら教えてください。
+
 = debexpo概要
 
 * Python製
