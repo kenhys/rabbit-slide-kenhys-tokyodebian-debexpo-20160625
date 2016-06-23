@@ -671,37 +671,53 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
 * 必要なメタ情報を保持していない
   * 持ってないものは表示できない orz...
+  * ないならかき集めればいいじゃない
 
-= debexpoの処理の流れ(1)
+= 収集するにはどうすればいいか
+
+* インポートの処理の流れを把握する
+* どのタイミングで収集すべきか知る
+* 不足している情報は何かを知る
+
+= インポート処理の流れ(1)
 
 * dputでmentors.d.nへアップロード
 * インポート前処理
 * パッケージのインポート処理
 
-= debexpoの処理の流れ(2)
+= インポート処理の流れ(2)
 
-* dputしたファイルは/tmp/debexpo/pubへ保存
-* /tmp/debexpoヘ移動
-  * orig.tar.gzがなかったりするとrejectメール
+* もう少し詳しく言うと
 
-= debexpoの処理の流れ(3)
+  * dputしたファイルは/tmp/debexpo/pubへ保存
+  * インポート前処理で/tmp/debexpoヘ移動
+    * orig.tar.gzがなかったりするとrejectメール
 
-* インポート処理で/tmp/debexpo/filesへ
-* /tmp/debexpo/files以下
-  * pool
-  * dist
-  * git
+= インポート処理の流れ(3)
 
-= debexpoの主要テーブル
+* もう少し詳しく言うと
+  * インポート処理で/tmp/debexpo/filesへ移動
+  * /tmp/debexpo/files以下
+    * pool
+    * dist
+    * git
 
-* packages
-* package_versions
-* package_info
+= 収集すべきデータは？
+
+* 現状、メタ情報はどう保持されているのかを把握する
+  * テーブルを覗いてみよう
+
+= 主要なテーブル
+
+* 主なものは3つ
+  * packages
+  * package_versions
+  * package_info
 
 = packagesテーブル
 
-* パッケージのマスター
-* 名前と説明くらいしか管理してない
+* パッケージのマスターテーブル
+* 名前や説明などのメタ情報を保持
 
 = packagesテーブル
 
