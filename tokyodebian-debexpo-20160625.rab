@@ -417,12 +417,14 @@ mentors.d.nの\n使いかた ITP編/RFS編
   # relative-width = 100
   # src = images/debexpo-pr32-use-latest-wheezy.png
 
-* Bento projectに移行してるよ
+* Bento projectに移行していたせいだった
 
 = 起動してログインするまで
 
     $ vagrant up --provision
     $ vagrant ssh
+
+* よくあるやりかた
 
 = vagrant sshして\nサーバーを起動
 
@@ -484,6 +486,14 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
 * verificationを空にする
   * メールの確認をバイパス
+
+= DMUP?
+
+  # image
+  # relative-width = 50
+  # src = images/debexpo-dmup.png
+
+* マシン使用ポリシーのこと
 
 = dmupの設定
 
