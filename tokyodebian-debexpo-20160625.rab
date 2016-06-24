@@ -378,11 +378,11 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
   * 既存システムにインストール
   * virtualenvでインストール
-  * Virtualboxでインストール
+  * VirtualBoxでインストール
 
-= まずはVirtualboxで
+= まずはVirtualBoxで
 
-* 環境を分けたいのでVirtualboxを選択
+* 環境を分けたいのでVirtualBoxを選択
 
 = Vagrantfileがアレ
 
