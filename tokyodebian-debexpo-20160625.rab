@@ -1004,4 +1004,5 @@ mentors.d.nの\n使いかた ITP編/RFS編
 * debexpoとはmentors.d.nのこと
 * RFSテンプレートが残念だったので改善した
 * そのうちマージされる(多分)ので乞御期待
+  * wheezyのままならrejectされるかも
 
