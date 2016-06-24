@@ -335,7 +335,7 @@ mentors.d.nの\n使いかた ITP編/RFS編
 * よく使われているならそこそこメンテされているイメージ
 * 実際にはそうでもなかった
 
-= upstream探し(3)\n
+= upstream探し(3)
 
   # image
   # relative-height = 70
