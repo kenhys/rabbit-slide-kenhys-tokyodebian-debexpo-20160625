@@ -394,7 +394,7 @@ mentors.d.nの\n使いかた ITP編/RFS編
 
 = vagrant upしてみると
 
-    [56714]% vagrant up
+    % vagrant up
     Bringing machine 'default' up with 'virtualbox' provider...
     ==> default: Box 'chef/debian-7.6' could not be found. Attempting to find and install...
       default: Box Provider: virtualbox
