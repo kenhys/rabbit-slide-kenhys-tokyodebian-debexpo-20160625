@@ -925,6 +925,7 @@ mentors.d.nの\n使いかた ITP編/RFS編
 * debexpo/plugins/rfstemplate.pyを実装
   * 実質100行ないくらい
   * debian/changelogやdebian/controlから抽出
+  * deb822, copyrightモジュールを活用
 
 = プラグインを適用
 
@@ -1001,6 +1002,6 @@ mentors.d.nの\n使いかた ITP編/RFS編
 = まとめ
 
 * debexpoとはmentors.d.nのこと
-* RFSテンプレートが残念だったのでカッとなってやった
-* プラグインを作成することでRFSテンプレートを改善
+* RFSテンプレートが残念だったので改善した
+* そのうちマージされる(多分)ので乞御期待
 
