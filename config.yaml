@@ -1,11 +1,15 @@
 ---
 id: tokyodebian-debexpo-20160625
 base_name: tokyodebian-debexpo-20160625
-tags: []
-presentation_date: 
+tags:
+  - rabbit
+  - debian
+  - debexpo
+presentation_date: 2016-06-25
 version: 2016.06.25
-licenses: []
-slideshare_id: 
+licenses:
+  - CC-BY-SA-4.0
+slideshare_id: tokyodebian-debexpo-20160625
 speaker_deck_id: 
 ustream_id: 
 vimeo_id: 
