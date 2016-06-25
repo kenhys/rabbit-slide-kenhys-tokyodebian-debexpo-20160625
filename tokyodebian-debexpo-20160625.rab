@@ -604,7 +604,7 @@ mentors.d.nの使いかた ITP編/RFS編
 = パッケージリスト
 
   # image
-  # relative-width = 100
+  # relative-width = 80
   # src = images/debexpo-package-list.png
 
 * リストアップされるように
