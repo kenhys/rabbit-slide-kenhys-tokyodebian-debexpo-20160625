@@ -1009,9 +1009,15 @@ mentors.d.nの使いかた ITP編/RFS編
 * debexpoとはmentors.d.nのこと
 * RFSテンプレートが残念だったので改善した
 * そのうちマージされる(多分)ので乞御期待
-  * 懸念点は実運用環境がwheezyらしい
-  * mentors.d.nがwheezyのままならrejectされるかも
-    * python-debianが古いので実装したプラグインが動かない
+
+= 補足
+
+* マージへ向けた懸念事項
+  * mentors.d.nは運用環境がwheezyらしい
+  * wheezyのままならrejectされるかも
+    * 実装したプラグインがwheezyでは動かない(0.1.23以降が必要)
+    * wheezyではpython-debianが古い(0.1.21)
+    * jessieなら0.1.27なので動作する
 
 = 会場からのフィードバック
 
